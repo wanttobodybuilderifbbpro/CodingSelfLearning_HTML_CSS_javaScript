@@ -4,18 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>셀프체크2</title>
+  <link rel="stylesheet" href="./sc_css/SelcCheck2.css">
 </head>
 <body>
-  <form action="#" method="get">
-    <button type="submit">
-      <img src="../image/google logo.png" width="50" height="40">
-      Log in with Google
-    </button>
-    <p> or </p>
-    <input type="text" placeholder="Username" disabled></input><br>
-    <input type="text" placeholder="Password" disabled></input><br>
-    <button>LOGIN</button>
-    <div>Forgot your password?</div>
+  <form action="#" id="login">
+    <fieldset>
+      <legend>로그인</legend>
+      <button type="button">
+        Log in with Google
+      </button>
+    </fieldset>
+    <p>or</p>
+    <fieldset>
+      <legend>일반 로그인</legend>
+      <label for="username">
+        <input type="text" id="username" name="username" placeholder="Username" >
+      </label>
+      <label for="password">
+        <input type="password" id="password" name="password" placeholder="Password" >
+      </label>
+      <button type="submit">
+        LOGIN
+      </button>
+    </fieldset>
+    <a href="#">Forgot your password?</p>
   </form>
 </body>
 </html>
