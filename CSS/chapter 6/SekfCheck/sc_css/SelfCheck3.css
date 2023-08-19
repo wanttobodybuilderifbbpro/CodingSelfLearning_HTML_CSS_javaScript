@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR&family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.bgcolour {
+  background-color: #F8F9FA;
+  width: 346px;
+  height: 265px;
+  border: 1px solid #a2a9b1;
+  padding-bottom: 12px;
+  padding-top: 6px;
+  padding-left: 5px;
+  font-size: 13px;
+  color: #0645AD;
+}
+
+.bgcolour #listFirst{
+  margin-left: 30px;
+}
+
+.bgcolour #sublistFirst{
+  margin-left: 58px;
+}
+
