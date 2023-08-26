@@ -8,5 +8,7 @@
 } */
 
 .Guideline{
+  display: flex;
+  justify-content: flex-start;
   color: #FFD700;
 }
