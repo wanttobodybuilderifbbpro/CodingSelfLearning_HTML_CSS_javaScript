@@ -404,3 +404,113 @@ section.contact .contact-me .right button{
 }
 
 /* End contact_with_me.css */
+
+/* Start media.css */
+
+/* 화면 너비가 1140px 이하일 때 */
+@media screen and (max-width:1140px) {
+  /* 메인 영역 container 기준 너비 환경 */
+  main .container{
+    width: 992px;
+  }
+  /* 섹션 영역  container 기준 너비 변경 - 2단으로 처리하기 위한 적정 너비 */
+  section .container{
+    width: 600px;
+  }
+  /* About me 영역 왼쪽 너비 50% -> 100% 변경 */
+  section .about-self .left{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  /* About me 영역 오른쪽 너비 50% -> 100% 변경 */
+  section .about-self .right{
+    width: 100%;
+    padding: 0;
+  }
+  /* What-I-do */
+  section .do-me .do-inner{
+    width: 48%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+  section .do-me .do-inner::nth-child(2n+1){
+    margin-right: 4%;
+  }
+  /* Portfolio */
+  section .portfolio-me .portfolio-inner{
+    width: 48%;
+    margin-right: 0;
+  }
+  section .portfolio-me .portfolio-inner::nth-child(2n+1){
+    margin-right: 4%;
+  }
+  /* contact with me */
+  section.contact .contact-me .left{
+    width: 100%;
+  }
+  section.contact .contact-me .right{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* 화면 너비가 992px 이하일 때 */
+@media screen and (max-width:992px) {
+  html{
+    font-size: 14px;
+  }
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 768px;
+  }
+  /* Portfolio 영역 본문 사각형 너비 변경 */
+  section .portfolio-me .portfolio-inner{
+    width: 100%;
+  }
+}
+/* 화면 너비가 768px 이하일 때 */
+@media screen and (max-width:768px) {
+  html{
+    font-size: 13px;
+  }
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 576px;
+  }
+  section .container{
+    width: 400px;
+  }
+  section .do-me .do-inner{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* 화면 너비가 576px 이하일 때 */
+@media screen and (max-width:576px) {
+  html{
+    font-size: 12px;
+  }
+  main .container{
+    width: 400px;
+  }
+  section .container{
+    width: 360px;
+  }
+}
+/* 화면 너비가 400px 이하일 때 */
+@media screen and (max-width:400px) {
+  html{
+    font-size: 11px;
+  }
+  main .container{
+    width: 320px;
+  }
+  section .container{
+    width: 320px;
+  }
+  main h4{
+    font-size: 1.5rem;
+  }
+  section .title h2{
+    font-size: 3rem;
+  }
+}
